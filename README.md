@@ -34,7 +34,7 @@ Show de alunos/Ver aluno específico:
 Get de usuário/Listar todos os usuários:
 `localhost:3000/users`
 
-### Requisições por edições de valores da API indicado usar o [Insomnia](https://insomnia.rest/download/).
+### Requisições de edição de valores na API / indicado usar o [Insomnia](https://insomnia.rest/download/).
 
 POST de usuário/Registrar um usuário:
 `Ao utilizar um método POST na rota /users/ irá ser registrado um usuário`
