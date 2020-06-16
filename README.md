@@ -50,5 +50,15 @@ DELETE de usuário/Registrar um usuário:
 
 ## Relevante
 
-Conhecendo os componentes de ReactJS, aplicando a lógica e utilizando diversos métodos que o react proporciona.
+Neste projeto me aprofundei nas seguintes tecnologias e métodos aplicáveis:
 
+- NodeJS
+- Express
+- MariaDB
+- SQL
+- Criação de Tokens
+- Criação e aplicação de Middlewares
+- Integrações JSON
+- Criação de modelos de banco de dados
+- Utilização do multer para carregar fotos
+- Fazer deploy da aplicação
