@@ -2,7 +2,7 @@ Este projeto foi criado em [NodeJS](https://nodejs.org/en/docs/).
 
 ## Introdução
 
-Está API REST foi desenvolvida com fins estudantis, você terá total acesso para consulta-lá tanto no seu localhost, quando no [Site](http://35.199.116.113/).
+Está API REST foi desenvolvida com fins estudantis, você terá total acesso para consulta-lá tanto no seu localhost, quanto ao [Site](http://35.199.116.113/).
 
 ## `Baixando arquivos necessários`
 
