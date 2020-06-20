@@ -20,32 +20,78 @@ Na raiz do projeto digite o seguinte comando
 ```bash
 npm run start
 ```
-## Sobre as Rotas
+# endpoints
 
-**Alunos**
-Get de alunos/Listar todos os alunos:
+Os seguintes endpoints estão configurados:
 
-`localhost:3000/alunos`
+## Home - não há nada aqui
 
-Show de alunos/Ver aluno específico:
-`localhost:3000/alunos/<id>`
+- `/` - GET
 
-**Usuários**
-Get de usuário/Listar todos os usuários:
-`localhost:3000/users`
+## Usuários (users)
 
-### Requisições de edição de valores na API / indicado usar o [Insomnia](https://insomnia.rest/download/).
+- `/users` - DELETE - Apaga o usuário logado
+- `/users` - PUT - Atualiza o usuário logado
+- `/users` - POST - Cria um usuário
+- `/users/:id` - GET - Mostra o usuário do ID enviado (rota desativada)
+- `/users` - GET - Mostra todos os usuários (rota desativada)
 
-POST de usuário/Registrar um usuário:
-`Ao utilizar um método POST na rota /users/ irá ser registrado um usuário`
+**Dados para usuários (JSON)**
 
-PUT de usuário/Registrar um usuário:
-`Ao utilizar um método PUT na rota /users/ o usuário será atualizado`
+```
+{
+	"nome": "nome válido",
+	"password": "senha válida",
+	"email": "email_valido@email.com"
+}
+```
 
-DELETE de usuário/Registrar um usuário:
-`Ao utilizar um método DELETE na rota /users/ o usuário será deletado`
+## Tokens
+
+- `/tokens` - POST - Obtém o token JWT
+
+**Dados para tokens (JSON)**
+
+```
+{
+	"email": "admin@email.com",
+	"password": "123456"
+}
+```
+
+## Aluno
+
+- `/alunos/:id` - DELETE - Apaga o aluno do ID enviado
+- `/alunos/:id` - PUT - Atualiza o aluno do ID enviado
+- `/alunos` - POST - Cria um aluno
+- `/alunos/:id` - GET - Mostra o aluno do ID enviado
+- `/alunos` - GET - Mostra todos os alunos
 
 
+**Dados para tokens (JSON)**
+
+```
+{
+	"nome": "Nome",
+	"sobrenome": "Sobrenome",
+	"email": "email@email.com",
+	"idade": "50",
+	"peso": "80.04",
+	"altura": "1.90"
+}
+```
+
+## Fotos
+
+Atenção aqui, esse é o único endpoint `multipart/form-data` para envio de arquivos.
+
+- `/fotos` - POST - Recebe um arquivo de foto JPG ou PNG e um `aluno_id`.
+
+**Dados para fotos (multipart/form-data)**
+
+```
+{
+	"foto": (ARQUIVO.PNG|
 
 
 ## Relevante
