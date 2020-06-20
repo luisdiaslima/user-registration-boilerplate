@@ -43,7 +43,7 @@ PUT de usuário/Registrar um usuário:
 `Ao utilizar um método PUT na rota /users/ o usuário será atualizado`
 
 DELETE de usuário/Registrar um usuário:
-`Ao utilizar um método DELETE na rota /users/ o usuário será atualizado`
+`Ao utilizar um método DELETE na rota /users/ o usuário será deletado`
 
 
 
