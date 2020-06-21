@@ -93,6 +93,7 @@ Atenção aqui, esse é o único endpoint `multipart/form-data` para envio de ar
 {
 	"foto": (ARQUIVO.PNG|
 
+```
 
 ## Relevante
 
